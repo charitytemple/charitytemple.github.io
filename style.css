@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+
+body{
+    background: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 325px;
+    height: 515;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px hsl(212, 23%, 80%);
+    color: hsl(217, 19%, 35%);
+    position: absolute;
+}
+
+.imageholder > img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.textholder{
+    margin: 30px 33px 20px;
+}
+
+.textholder > h1{
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 24px;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 10px;
+}
+
+.textholder > p{
+    font-weight: 200px;
+    font-size: 12px;
+    color: hsl(214, 17%, 60%);
+    line-height: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.pubdetails{
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar{
+    display: inline;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.authorcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorcontainer h3{
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.authorcontainer small{
+    font-size: 12px;
+    color: hsl(214, 17%, 51%);
+}
+
+.btncontainer{
+  background: hsl(210, 46%, 95%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  align-self: center;
+}
+
+.btncontainer:hover{
+  background: hsl(217, 19%, 35%);
+}
+
+#arrow{
+  width:15px;
+  height:13px;
+}
+
+#hidden{
+  display: none;
+}
+
+.socialbar{
+  width: 100%;
+  height: 75px;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  align-items:center;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.social-icon{
+  width:20px;
+  height:20px;
+  margin-right: 15px;
+}
+
+.icon-container{
+  display: flex;
+  align-items: center;
+}
+
+
+.icon-container > span{
+  color:white;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-left: 30px;
+  margin-right: 25px;
+
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px){
+    .container{
+        width: 730px;
+        height: 280px;
+        display: flex;
+    }
+    .imageholder img{
+        width:100%;
+        height:280px;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+    .textholder{
+        margin: 40px 40px 30px;
+    }
+    .textholder h1{
+        font-size: 20px;
+        line-height: 1.6rem;
+        margin-bottom: 24px;
+    }
+
+    .textholder p{
+      margin-bottom: 20px;
+    }
+
+    .btncontainer{
+      align-self: center;
+    }
+
+    .popupbox{
+      align-items: center;
+      justify-content: center;
+    }
+
+  .socialbar{
+      width: 240px;
+      height: 55px;
+      background-color: hsl(217, 19%, 35%);
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      border-radius: 10px;
+      position: absolute;
+      top: 140px;
+      left: 550px;
+}
+
+.socialbar::after{
+      content: "";
+      width: 0;
+      height: 0;
+      display: block;
+      border-top: 20px solid hsl(217, 19%, 35%);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      position:absolute;
+      bottom: -18px;
+}
